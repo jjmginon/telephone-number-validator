@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/* || RESET */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+button {
+    font-family: inherit;
+}
+
+/* || GENERAL STYLES */
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    min-height: 100vh;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+}
+
+p {
+    line-height: 1.5;
+}
+
+label {
+    display: block;
+    line-height: 1.5;
+    color: #e6edf3;
+}
+
+.container {
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 720px;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+    backdrop-filter: blur(10px);
+}
+
+/* || HEADER */
+
+.header__h1 {
+    margin: 1rem 0;
+    font-size: 1.75rem;
+    text-align: center;
+    color: #e6edf3;
+}
+
+.header__p {
+    text-align: justify;
+    color: #e6edf3;
+}
+
+.header__p:last-of-type {
+    margin-top: 1rem;
+}
+
+.features {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 2px solid #6e7681;
+    border-radius: 8px;
+    color: #e6edf3;
+}
+
+.header__ul {
+    margin-top: 0.5rem;
+    margin-left: 1.5rem;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* || MAIN */
+
+.label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hover-info {
+    color: #e6edf3;
+}
+
+.inputs {
+    margin: 1rem 0 1rem;
+}
+
+.inputs input {
+    margin-top: 0.5rem;
+    padding: 0 1rem;
+    border: 2px solid #6e7681;
+    border-radius: 8px;
+    width: 100%;
+    height: 3rem;
+    font-size: 1rem;
+    text-align: center;
+    transition: 0.1s ease-in-out;
+    outline: none;
+}
+
+.inputs input:focus {
+    border: 2px solid #7eadd9;
+    box-shadow: 0 0 5px rgba(31, 111, 235, 0.5);
+}
+
+.inputs button {
+    margin-top: 1rem;
+    width: 100%;
+    height: 3rem;
+    border: 1px solid #7eadd9;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #e6edf3;
+    background: linear-gradient(to right, hsl(246, 55%, 20%), hsl(245, 39%, 38%), hsl(240, 27%, 29%));
+    cursor: pointer;
+    outline: none;
+}
+
+.inputs button:hover,
+.inputs button:focus-visible {
+    background: linear-gradient(to right, hsl(246, 55%, 30%), hsl(245, 39%, 48%), hsl(240, 27%, 39%));
+    border: 2px solid #7eadd9;
+    box-shadow: 0 0 5px rgba(31, 111, 235, 0.5);
+}
+
+.inputs button:active {
+    filter: brightness(70%);
+}
+
+/* || FOOTER */
+
+.results-div {
+    padding: 0.5rem;
+    width: 100%;
+    height: 100%;
+    font-weight: bolder;
+    text-align: center;
+}
