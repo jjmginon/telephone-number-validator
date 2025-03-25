@@ -94,6 +94,12 @@ label {
     color: #e6edf3;
 }
 
+.hover-info:hover,
+.hover-info:focus {
+    color: #7eadd9;
+    transition: color 0.3s ease-in-out;
+}
+
 .inputs {
     margin: 1rem 0 1rem;
 }
